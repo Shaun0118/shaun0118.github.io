@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+    <style>
+        .carousel-inner img {
+            /* max-height: 20vh; */
+            object-fit: cover;
+            display: block;
+            width: 100%;
+        }
+    </style>
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img class="navbar-brand img-fluid mx-auto " src="./images/Logo.png" width="170">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">關於我們</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">最新消息</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            館內典藏
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">古典畫作</a></li>
+                            <li><a class="dropdown-item" href="#">現代畫作</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">近期活動</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">搜尋</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container ">
+            <div class="row ">
+                <div class="card col-md-6 ">
+                    <p class="h5 m-2">關於我們 | About Us </p>
+                    <img src="./images/關於我們.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus magna tellus
+                            neque
+                            pretium quis elementum. Sem id adipiscing semper tempor cursus ipsum. Suspendisse maecenas
+                            pharetra
+                            placerat vitae elementum tempus donec. Nullam dolor id turpis felis, lorem facilisi et magna
+                            tincidunt. Etiam turpis aliquam sit porta in.</p>
+                    </div>
+                </div>
+                <div class="card col-md-6">
+                    <p class="h5 m-2">最新消息 | What’s New </p>
+                    <img src="./images/最新消息.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus magna tellus
+                            neque
+                            pretium quis elementum. Sem id adipiscing semper tempor cursus ipsum. Suspendisse maecenas
+                            pharetra
+                            placerat vitae elementum tempus donec. Nullam dolor id turpis felis, lorem facilisi et magna
+                            tincidunt. Etiam turpis aliquam sit porta in.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <carosel>
+        <div class="container">
+            <p class="h5 m-2"> 館內典藏 | Exhibitions</p>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./carouselImages/典藏(1).jpg" class="test" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./carouselImages/典藏(2).jpg" class="test" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./carouselImages/典藏(3).jpg" class="test" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./carouselImages/典藏(4).jpg" class="test" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </carosel>
+
+    <div class="container">
+        <p class="h5 m-2">近期活動 | Eevent</p>
+        <div class="row">
+            <div class="col-md">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="./images/活動 (1).jpg" class="img-fluid" alt=" ...">
+                        </div>
+                        <div class="col-8 d-flex align-items-center">
+                            <div class="card-body ">
+                                <h5 class="card-title text-center  ">藝術家對談:將安娜</h5>
+                                <p class="card-text text-center">2021/8/5 | 2F會議室</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="./images/活動 (2).jpg" class="img-fluid" alt=" ...">
+                        </div>
+                        <div class="col-8 d-flex align-items-center">
+                            <div class="card-body ">
+                                <h5 class="card-title text-center  ">藝術家對談:將安娜</h5>
+                                <p class="card-text text-center">2021/8/5 | 2F會議室</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="./images/活動 (3).jpg" class="img-fluid" alt=" ...">
+                        </div>
+                        <div class="col-8 d-flex align-items-center">
+                            <div class="card-body ">
+                                <h5 class="card-title text-center  ">藝術家對談:將安娜</h5>
+                                <p class="card-text text-center">2021/8/5 | 2F會議室</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="./images/活動 (4).jpg" class="img-fluid" alt=" ...">
+                        </div>
+                        <div class="col-8 d-flex align-items-center">
+                            <div class="card-body ">
+                                <h5 class="card-title text-center  ">藝術家對談:將安娜</h5>
+                                <p class="card-text text-center">2021/8/5 | 2F會議室</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<style>
+    .card img {
+        border-radius: 10px;
+    }
+
+    .card h5 {
+        font-weight: 700;
+    }
+</style>
+
+</html>
